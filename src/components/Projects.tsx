@@ -1,13 +1,13 @@
-import React from 'react';
-import { Row, Col, Card, Typography } from '../tools/design';
-import { projects } from '../variables';
+import React from "react";
+import { Row, Col, Card, Typography } from "../tools/desing";
+import { projects } from "../variables";
 
 const { Title, Paragraph } = Typography;
 
 const Projects: React.FC = () => {
   return (
-    <div style={{ padding: '50px', background: '#f0f2f5' }}>
-      <Title level={2} style={{ textAlign: 'center', marginBottom: '40px' }}>
+    <Col style={{ padding: "50px", background: "#f0f2f5" }}>
+      <Title level={2} style={{ textAlign: "center", marginBottom: "40px" }}>
         Nuestros Proyectos
       </Title>
       <Row gutter={[16, 16]}>
@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
                 <img
                   alt={project.title}
                   src={project.image}
-                  style={{ height: '200px', objectFit: 'cover' }}
+                  style={{ height: "200px", objectFit: "cover" }}
                 />
               }
             >
@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
           </Col>
         ))}
       </Row>
-    </div>
+    </Col>
   );
 };
 
